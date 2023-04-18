@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <link rel="stylesheet" href="./util/style.css" />
+    <title>TetrisZen</title>
+</head>
+
+<body>
+ 
+    <div id="home" class="full-screen float with-bg">
+        <button id="startBtn" class="semi-transparent-button active">
+            START
+        </button>
+    </div>
+
+    
+    <div id="game-over" class="full-screen float hidden">
+        <h1>Você não é tão ruim assim</h1>
+        <h2>Score: <span class="score"></span></h2>
+        <button id="playAgainBtn" class="active">Tente Denovo</button>
+        <button id="quitBtn">Saia</button>
+    </div>
+
+    
+    <div id="game" class="full-screen with-bg">
+        <div class="left side"></div>
+        <canvas id="tetris" width="400" height="760"></canvas>
+        <div class="right side">
+            <div class="square"><img src="" id="next-piece" /></div>
+            <p>Pontos: <span class="score"></span></p>
+            <p>Velocidade: <span id="speed"></span></p>
+        </div>
+    </div>
+
+    <script src="./util/piece.js"></script>
+    <script src="./util/skeletons.js"></script>
+    <script src="./util/functions.js"></script>
+    <script src="./util/game.js"></script>
+</body>
+
+</html>

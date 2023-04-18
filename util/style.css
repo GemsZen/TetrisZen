@@ -1,0 +1,102 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    background-color: #333333;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+#score #speed {
+    display: inline-block;
+}
+
+div {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: monospace;
+    text-align: center;
+}
+
+canvas {
+    display: block;
+    margin: 0 auto;
+}
+
+#game {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+
+.side {
+    width: 400px;
+}
+
+#tetris {
+    border: 4px outset #919191;
+    max-width: 400px !important;
+    max-height: 760px !important;
+}
+
+.float {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#game-over {
+    background-color: rgb(0 0 0 / 70%);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#home {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.hidden {
+    display: none !important;
+}
+
+
+#quitBtn {
+    margin-top: 10px;
+}
+
+button {
+    display: block;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 8px;
+    background: #fff;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    color: #333;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all 0.2s ease-out;
+    font-size: 55px;
+    padding: 15px 0px;
+    width: 400px;
+}
+
+button.active {
+    background: #FFF !important;
+}
+
+button:hover {
+    background: #FFF;
+    cursor: pointer;
+}
